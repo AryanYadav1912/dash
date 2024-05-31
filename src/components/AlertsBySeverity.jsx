@@ -18,7 +18,10 @@ const AlertsBySeverity = () => {
   return (
     <Plot
       data={[trace]}
-      layout={{ title: 'Alerts by Severity', template: 'plotly_dark' }}
+      layout={{ title: 'Alerts by Severity', template: 'plotly_dark',
+      paper_bgcolor: '#000', // Set background color directly
+      plot_bgcolor: '#001',
+       }}
       useResizeHandler
       style={{ width: "100%", height: "100%" }}
     />
